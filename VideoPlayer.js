@@ -58,6 +58,8 @@ export default class VideoPlayer extends Component {
             playInBackground: this.props.playInBackground || false,
             repeat: this.props.repeat || false,
             title: this.props.title || '',
+            hideVolumeControls:this.props.hideVolumeControls,
+            hideFullscreenControls:this.props.hideFullscreenControls
         };
 
         /**
@@ -786,8 +788,8 @@ export default class VideoPlayer extends Component {
                     <View style={ styles.controls.topControlGroup }>
                         { this.renderBack() }
                         <View style={ styles.controls.pullRight }>
-                            { this.renderVolume() }
-                            { this.renderFullscreen() }
+                            { !this.opts.hideVolumeControls && this.renderVolume() }
+                            { !this.opts.hideFullscreenControls && this.renderFullscreen() }
                         </View>
                     </View>
                 </Image>
