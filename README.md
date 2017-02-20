@@ -1,4 +1,6 @@
-# react-native-video-controls
+# react-native-video-controls (DO NOT USE THIS)
+## SOLELY CREATED AS A HACK / FIX TO QUICKLY GET AN IMPLEMENTATION OF THE ORIGINAL UP AND RUNNING...
+
 Controls for the React Native `<Video>` component at [react-native-video](https://github.com/react-native-community/react-native-video). 1.1.x works with RN ^0.39.2. For support for lower versions of RN use version 1.0.x.
 
 ## Features
