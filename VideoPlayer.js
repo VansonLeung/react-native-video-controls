@@ -49,6 +49,8 @@ export default class VideoPlayer extends Component {
 			currentTime: 0,
 			error: false,
 			duration: 0,
+			isUserSeeking: false,
+			userSeekingValue: 0,
 		};
 
 		/**
@@ -899,6 +901,15 @@ export default class VideoPlayer extends Component {
 	 * Render the seekbar and attach its handlers
 	 */
 	renderSeekbar() {
+
+		var value = this.state.currentTime;
+		var maximumValue = this.state.duration;
+
+		if (this.state.isUserSeeking)
+		{
+			value = this.state.userSeekingValue;
+		}
+
 		return (
 			<View
 				style={ styles.seek.track }
@@ -907,9 +918,18 @@ export default class VideoPlayer extends Component {
 				}}
 			>
 				<Slider
-					value={this.state.currentTime}
-					maximumValue={this.state.duration}
+					value={value}
+					maximumValue={maximumValue}
+					onValueChange={(value) => {
+						this.setState({
+							isUserSeeking: true,
+							userSeekingValue: value,
+						})
+					}}
 					onSlidingComplete={(value) => {
+						this.setState({
+							isUserSeeking: false,
+						})
 						this.seekTo(value);
 					}}
 				/>
