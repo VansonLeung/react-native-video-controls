@@ -1198,7 +1198,7 @@ const styles = {
 		track: {
 			alignSelf: 'stretch',
 			justifyContent: 'center',
-			height: 40,
+			height: 4,
 			marginLeft: 28,
 			marginRight: 28,
 		},
@@ -1216,8 +1216,8 @@ const styles = {
 		},
 		sliderContainer: {
 			position: 'absolute',
-			bottom: 40,
-			height: 40,
+			bottom: 0,
+			height: 4,
 			left: 10,
 			right: 10
 		},
@@ -1229,29 +1229,29 @@ const styles = {
 		},
 	}),
 	volume: StyleSheet.create({
-		container: {
-			alignItems: 'center',
-			justifyContent: 'flex-start',
-			flexDirection: 'row',
-			height: 40,
-			marginLeft: 20,
-			marginRight: 20,
-			width: 150,
-		},
-		track: {
-			backgroundColor: '#333',
-			height: 40,
-			marginLeft: 7,
-		},
-		fill: {
-			backgroundColor: '#FFF',
-			height: 40,
-		},
-		handle: {
-			position: 'absolute',
-			marginTop: -24,
-			marginLeft: -24,
-			padding: 16,
-		}
-	})
+        container: {
+            alignItems: 'center',
+            justifyContent: 'flexstart',
+            flexDirection: 'row',
+            height: 1,
+            marginLeft: 20,
+            marginRight: 20,
+            width: 150,
+        },
+        track: {
+            backgroundColor: '#333',
+            height: 1,
+            marginLeft: 7,
+        },
+        fill: {
+            backgroundColor: '#FFF',
+            height: 1,
+        },
+        handle: {
+            position: 'absolute',
+            marginTop: -24,
+            marginLeft: -24,
+            padding: 16,
+        }
+    })
 };
