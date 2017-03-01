@@ -1198,7 +1198,7 @@ const styles = {
 		track: {
 			alignSelf: 'stretch',
 			justifyContent: 'center',
-			height: 4,
+			height: 40,
 			marginLeft: 28,
 			marginRight: 28,
 		},
@@ -1216,8 +1216,8 @@ const styles = {
 		},
 		sliderContainer: {
 			position: 'absolute',
-			bottom: 0,
-			height: 4,
+			bottom: 40,
+			height: 40,
 			left: 10,
 			right: 10
 		},
