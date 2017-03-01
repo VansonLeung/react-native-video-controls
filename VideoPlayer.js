@@ -909,7 +909,7 @@ export default class VideoPlayer extends Component {
 				<Slider
 					value={this.state.currentTime}
 					maximumValue={this.state.duration}
-					onValueChange={(value) => {
+					onSlidingComplete={(value) => {
 						this.seekTo(value);
 					}}
 				/>
