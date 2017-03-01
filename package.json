@@ -23,6 +23,6 @@
       "react-native-video": "git+https://github.com/react-native-community/react-native-video.git#master"
   },
   "peerDependencies": {
-    "react-native": "^0.39.2"
+    "react-native": ">=0.39.2"
   }
 }
