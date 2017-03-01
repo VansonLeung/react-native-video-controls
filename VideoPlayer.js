@@ -1231,7 +1231,7 @@ const styles = {
 	volume: StyleSheet.create({
         container: {
             alignItems: 'center',
-            justifyContent: 'flexstart',
+            justifyContent: 'flex-start',
             flexDirection: 'row',
             height: 1,
             marginLeft: 20,
